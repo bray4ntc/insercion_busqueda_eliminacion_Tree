@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KD-Tree Visualization</title>
+    <style>
+        #canvas {
+            border: 1px solid black;
+        }
+        .controls {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="controls">
+        <button onclick="insertRandomPoint()">Insercion de un punto aleatorio</button>
+        <button onclick="findNearest()">Buscar el vecino mas cercano a un punto aleatorio</button>
+        <button onclick="deletePoint()">Borrar un punto</button>
+        <input type="number" id="k" placeholder="k value for k-NN">
+    </div>
+    <canvas id="canvas" width="800" height="600"></canvas>
+    <script src="kd-tree.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
